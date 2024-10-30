@@ -1,5 +1,9 @@
 # ToDo List
 
+## Deploy
+
+Access the [Live Demo](https://igor-deploy-todo-list.vercel.app/) or copy the URL directly: `https://igor-deploy-todo-list.vercel.app/
+
 ## Lighthouse
 
 ![Image](./public/lighthouse.png)
