@@ -1,5 +1,12 @@
+import { Flow, Form, Header } from "~components/ui";
 import "~styles/main.css";
 
 export function App() {
-    return <h1>App</h1>;
+    return (
+        <>
+            <Header />
+            <Form />
+            <Flow />
+        </>
+    );
 }

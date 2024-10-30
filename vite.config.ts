@@ -10,8 +10,11 @@ export default defineConfig({
     },
     resolve: {
         alias: {
+            "~assets": resolve(__dirname, "./src/assets"),
+            "~components": resolve(__dirname, "./src/components"),
             "~styles": resolve(__dirname, "./src/styles"),
-            "~types": resolve(__dirname, "./src/types")
+            "~types": resolve(__dirname, "./src/types"),
+            "~utils": resolve(__dirname, "./src/utils")
         }
     }
 });

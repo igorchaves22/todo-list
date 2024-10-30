@@ -3,8 +3,11 @@ module.exports = {
     content: ["./src/**/*.tsx"],
     theme: {
         extend: {
+            gridTemplateColumns: {
+                "max-container": "min(100%, 90rem)"
+            },
             fontFamily: {
-                orbitron: ["Poppins", "sans-serif"]
+                patrickHand: ["Patrick Hand", "sans-serif"]
             }
         }
     },
