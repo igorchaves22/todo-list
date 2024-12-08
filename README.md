@@ -14,6 +14,7 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - TypeScript
 - React.js
 - Vite.js
+- Tailwindcss
 
 **Development support:**
 
