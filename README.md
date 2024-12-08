@@ -22,13 +22,13 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - Lighthouse
 - Live demo on Vercel
 - Biome.js
-- Standardized code formatting
 
 **Code quality and best practices:**
 
 - Conventional commits
 - Documentation
 - Tests
+- Standardized code formatting
 
 ![Image](./public/lighthouse.png)
 
