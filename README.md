@@ -14,12 +14,16 @@ This project is a simple and efficient web application for managing your tasks. 
 **Development support:**
 
 - Git
-- PNPM
+- PNPM Package Manager
+- Lighthouse
 
 **Code quality and best practices:**
 
 - Conventional commits
 - Documentation
+- Tests
+
+![Image](./public/lighthouse.png)
 
 ## How to use
 
@@ -30,3 +34,9 @@ This project is a simple and efficient web application for managing your tasks. 
 
 1. To start the development server, use the `pnpm dev` command.
 2. This project uses `Vite.js` as the bundler. To view the project running, open your browser and navigate to `http://localhost:3000`. If you prefer to use a different server port, open the `vite.config.ts` file at the root of the project, locate the `server` section, and modify the `port` value as needed.
+
+**Running tests:**
+
+1. Before running tests, build the project using the pnpm build command to create a production-optimized version.
+2. After building, preview your project with the pnpm preview command to start the preview server. The preview server will start on port 5000 by default. If you prefer to use a different preview port, open the vite.config.ts file in the root of your project, locate the preview section, and modify the port value as needed.
+3. Test coverage was done using `Lighthouse`. To run it, open an incognito window in your browser, navigate to the foot-view project URL, press `F12` or right-click and select `Inspect`, go to the `Lighthouse` tab and click `Generate Report` to run the test.
