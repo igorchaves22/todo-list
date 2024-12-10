@@ -15,11 +15,13 @@ This project is a simple and efficient web application for managing your tasks. 
 
 - Git
 - PNPM
+- Biome.js
 
 **Code quality and best practices:**
 
 - Conventional commits
 - Documentation
+- Standardized code formatting
 
 ## How to use
 
