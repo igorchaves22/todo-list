@@ -32,6 +32,7 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - Standardized code formatting
 - Absolute imports
 - SEO
+- Task data saved to LocalStorage
 
 ![Image](./public/lighthouse.png)
 
