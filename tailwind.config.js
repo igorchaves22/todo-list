@@ -2,7 +2,11 @@
 export default {
     content: ["./src/**/*.tsx"],
     theme: {
-        extend: {}
+        extend: {
+            fontFamily: {
+                patrickHand: ["Patrick Hand", "sans-serif"]
+            }
+        }
     },
     plugins: []
 };
