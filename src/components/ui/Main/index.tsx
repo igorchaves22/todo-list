@@ -1,3 +1,4 @@
+import { TaskList } from "~components/layout";
 import { NotHasTasksIndicator } from "~components/shared";
 import { useMain } from "~hooks";
 import { renderElementIfTrue } from "~utils";
@@ -20,7 +21,7 @@ export const Main = () => {
                 {renderElementIfTrue(
                     hasTasks,
                     <>
-                        <p className="w-full h-min text-zinc-50 font-patrickHand text-sm text-center">TASK LIST</p>
+                        <TaskList />
                         <p className="w-full h-min text-zinc-50 font-patrickHand text-sm text-center">
                             PAGINATION CONTROLS
                         </p>
