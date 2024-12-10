@@ -29,6 +29,7 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - Documentation
 - Tests
 - Standardized code formatting
+- SEO
 
 ![Image](./public/lighthouse.png)
 
