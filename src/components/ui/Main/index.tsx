@@ -14,7 +14,7 @@ export const Main = () => {
                 </section>
             </section>
             <section className="w-full h-min flex flex-col gap-y-4 justify-between content-between place-items-center md:w-[90%]">
-                <p className="w-full h-min text-zinc-50 font-patrickHand text-sm">
+                <p className="w-full h-min text-zinc-500 font-patrickHand text-sm">
                     N° tasks: {totalStateTasks} / {totalStoredTasks}
                 </p>
                 {renderElementIfTrue(
