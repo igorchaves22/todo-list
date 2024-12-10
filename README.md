@@ -15,13 +15,17 @@ This project is a simple and efficient web application for managing your tasks. 
 
 - Git
 - PNPM
+- Lighthouse
 - Biome.js
 
 **Code quality and best practices:**
 
 - Conventional commits
 - Documentation
+- Tests
 - Standardized code formatting
+
+![Image](./public/lighthouse.png)
 
 ## How to use
 
@@ -31,3 +35,8 @@ This project is a simple and efficient web application for managing your tasks. 
 **Running app:**
 
 1. This project uses `Vite.js` as its bundler. To view the project running, open your web browser and navigate to the URL `http://localhost:3000`. If you prefer to use a different server port, open the `vite.config.ts` file in the project root, find the `server` section, and change the `port` value as desired.
+
+**Running tests:**
+
+1. To test with `Lighthouse`, first run the `pnpm build` command. Then, start the preview server with the `pnpm preview` command and access the URL `http://localhost:4000` in an incognito browser window. If you prefer to use a different preview port, open the `vite.config.ts` file in the root of your project, find the `preview` section, and change the `port` value as desired.
+2. To run the test, press `F12` or right-click and select `Inspect`. Go to the `Lighthouse` tab and click `Generate Report` to generate the report.
