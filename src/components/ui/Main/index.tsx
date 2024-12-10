@@ -1,3 +1,4 @@
+import { NotHasTasksIndicator } from "~components/shared";
 import { useMain } from "~hooks";
 import { renderElementIfTrue } from "~utils";
 
@@ -20,13 +21,12 @@ export const Main = () => {
                     hasTasks,
                     <>
                         <p className="w-full h-min text-zinc-50 font-patrickHand text-sm text-center">TASK LIST</p>
-                        <p className="w-full h-min text-zinc-50 font-patrickHand text-sm text-center">PAGINATION CONTROLS</p>
+                        <p className="w-full h-min text-zinc-50 font-patrickHand text-sm text-center">
+                            PAGINATION CONTROLS
+                        </p>
                     </>
                 )}
-                {renderElementIfTrue(
-                    notHasTasks,
-                    <p className="w-full h-min text-zinc-50 font-patrickHand text-sm text-center">NO TASKS FOUND</p>
-                )}
+                {renderElementIfTrue(notHasTasks, <NotHasTasksIndicator />)}
             </section>
         </main>
     );
