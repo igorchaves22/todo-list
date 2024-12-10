@@ -15,6 +15,7 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - React.js
 - Vite.js
 - Tailwindcss
+- Redux
 
 **Development support:**
 
@@ -33,6 +34,7 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - Absolute imports
 - SEO
 - Task data saved to LocalStorage
+- State management
 
 ![Image](./public/lighthouse.png)
 
