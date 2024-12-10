@@ -13,7 +13,8 @@ export default defineConfig({
     },
     resolve: {
         alias: {
-            "~types": resolve(__dirname, "./src/types")
+            "~styles": resolve(__dirname, "./src/styles"),
+            "~types": resolve(__dirname, "./src/types"),
         }
     }
 });
