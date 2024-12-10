@@ -9,3 +9,15 @@
     font-style: normal;
     font-display: swap;
 }
+
+html::-webkit-scrollbar {
+    @apply w-3 bg-zinc-950;
+}
+
+html::-webkit-scrollbar-thumb {
+    @apply rounded-lg bg-purple-600;
+}
+
+#root {
+    @apply w-full h-auto min-h-screen flex flex-col bg-zinc-950;
+}
