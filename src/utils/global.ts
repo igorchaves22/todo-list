@@ -1,3 +1,5 @@
+import { ChildrenType } from "~types";
+
 export const arrayLength = <T>(array: T[]) => {
     return array.length;
 };
@@ -11,4 +13,8 @@ export const getItemsInRange = <T>(items: T[], rangeStart: number, maxRange: num
     const end = start + maxRange;
 
     return items.slice(start, end);
+};
+
+export const renderElementIfTrue = (condition: boolean, element: ChildrenType) => {
+    return condition ? element : null;
 };

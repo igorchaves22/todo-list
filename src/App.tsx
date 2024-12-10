@@ -1,10 +1,13 @@
 import { TodoListProvider } from "~components/shared";
-import { Header } from "~components/ui";
+import { Header, Main } from "~components/ui";
 
 export function App() {
     return (
-        <TodoListProvider>
+        <>
             <Header />
-        </TodoListProvider>
+            <TodoListProvider>
+                <Main />
+            </TodoListProvider>
+        </>
     );
 }
