@@ -2,6 +2,10 @@
 
 This project is a simple web application for managing your tasks. With features such as creating, deleting, filtering, and a pagination system to organize tasks, the ToDo List provides an intuitive and practical experience to keep your activities organized. Perfect for optimizing productivity and making it easier to track your daily tasks.
 
+## Live demo
+
+Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the URL directly: `https://igor-live-demo-todo-list.vercel.app/`
+
 ## Project resources
 
 **Core resources:**
@@ -16,6 +20,7 @@ This project is a simple web application for managing your tasks. With features 
 - Git
 - PNPM Package Manager
 - Biome.js
+- Live demo on Vercel
 
 **Code quality and best practices:**
 
