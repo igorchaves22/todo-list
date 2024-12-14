@@ -4,9 +4,17 @@ This project is a simple web application for managing your tasks. With features 
 
 ## Project resources
 
+**Core resources:**
+
+- HTML
+- TypeScript
+- React.js
+- Vite.js
+
 **Development support:**
 
 - Git
+- PNPM Package Manager
 
 **Code quality and best practices:**
 
@@ -16,3 +24,8 @@ This project is a simple web application for managing your tasks. With features 
 ## How to use
 
 1. Clone this repository to your computer.
+2. This project uses the `PNPM` package manager. To install dependencies, run the `pnpm install` command. If you prefer to use a different package manager, delete the `node_modules` and `pnpm-lock.yaml` files in the project root and use the appropriate commands to configure it.
+
+**Running app:**
+
+1. This project uses `Vite.js` as its bundler. To view the project, run the `pnpm dev` command and then open your web browser and navigate to the URL `http://localhost:3000`. If you prefer to use a different server port, open the `vite.config.ts` file in the root of the project, find the `server` section, and change the `port` value as desired.
