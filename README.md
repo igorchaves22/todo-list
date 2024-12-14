@@ -18,6 +18,7 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - React.js
 - Vite.js
 - LocalStorage
+- Redux
 
 **Development support:**
 
@@ -34,6 +35,8 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - Tests
 - Standardized code formatting
 - Absolute imports
+- Task List data saved in LocalStorage
+- State management
 
 ![Image](./public/lighthouse.png)
 
