@@ -1,3 +1,9 @@
+import { ChildrenType } from "~types";
+
+export const renderElementIfTrue = (condition: boolean, element: ChildrenType) => {
+    return condition ? element : null;
+};
+
 export const arrayLength = <T>(array: T[]) => {
     return array.length;
 };
