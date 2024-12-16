@@ -2,7 +2,14 @@
 export default {
     content: ["./src/**/*.tsx"],
     theme: {
-        extend: {}
+        extend: {
+            gridTemplateColumns: {
+                "max-layout": "min(100%, 90rem)"
+            },
+            fontFamily: {
+                "patrick-hand": ["Patrick Hand", "sans-serif"]
+            }
+        }
     },
     plugins: []
 };

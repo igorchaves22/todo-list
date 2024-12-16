@@ -1,9 +1,10 @@
 import { TodoListProvider } from "~components/shared";
+import { Header } from "~components/ui";
 
 export function App() {
     return (
         <TodoListProvider>
-            <h1>ToDo List</h1>
+            <Header />
         </TodoListProvider>
     );
 }
