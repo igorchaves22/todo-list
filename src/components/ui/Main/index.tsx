@@ -19,7 +19,7 @@ export const Main = () => {
                 </p>
                 {renderElementIfTrue(
                     hasTasks,
-                    <section className="w-full h-min min-h-full flex flex-col gap-y-10 justify-between">
+                    <section className="w-full h-min min-h-full flex flex-col gap-y-4 justify-between">
                         <TaskList />
                         <p className="text-zinc-50 font-patrickHand text-sm text-center">PAGE CONTROLS</p>
                     </section>
