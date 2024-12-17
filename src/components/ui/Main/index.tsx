@@ -1,3 +1,4 @@
+import { TaskList } from "~components/layout";
 import { useMain } from "~hooks";
 import { renderElementIfTrue } from "~utils";
 
@@ -19,7 +20,7 @@ export const Main = () => {
                 {renderElementIfTrue(
                     hasTasks,
                     <section className="w-full h-min min-h-full flex flex-col gap-y-10 justify-between">
-                        <p className="text-zinc-50 font-patrickHand text-sm text-center">TASK LIST</p>
+                        <TaskList />
                         <p className="text-zinc-50 font-patrickHand text-sm text-center">PAGE CONTROLS</p>
                     </section>
                 )}

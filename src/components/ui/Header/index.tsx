@@ -1,4 +1,4 @@
-import lineSvg from "~assets/svg/line.svg";
+import lineSvg from "~assets/svg/line-1.svg";
 
 export const Header = () => {
     return (

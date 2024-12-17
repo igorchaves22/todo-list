@@ -48,3 +48,8 @@ export const calculateTotalPages = (itemsLength: number) => {
 export const getTasksInRange = (taskList: TaskListType, currentPage: number) => {
     return getItemsInRange(taskList, currentPage, TODO_LIST_ITEMS_PER_PAGE);
 };
+
+export const itemAnimationDelays = Array.from(
+    { length: TODO_LIST_ITEMS_PER_PAGE },
+    (_, index) => index / TODO_LIST_ITEMS_PER_PAGE
+);
