@@ -29,7 +29,7 @@ export const PageControls = () => {
                 onClick={handleClickToPrevPage}
                 aria-label="Go to previous page"
             />
-            <p className="w-full max-w-10 h-min text-zinc-50 font-patrickHand text-sm text-center">
+            <p className="w-full max-w-10 h-min text-neutral-50 font-patrickHand text-sm text-center">
                 {currentPage} / {totalPages}
             </p>
             <ActionButton
