@@ -5,9 +5,11 @@ type AdditionalProps = ITask;
 
 interface ITaskCardProps extends AdditionalProps {
     animationDelay: number;
+    toggleTaskDoneFn: (id: number) => void;
+    removeTaskFn: (id: number) => void;
 }
 
-export const TaskCard = ({ animationDelay, info, content }: ITaskCardProps) => {
+export const TaskCard = ({ animationDelay, toggleTaskDoneFn, removeTaskFn, id, info, content }: ITaskCardProps) => {
     return (
         <li
             style={{
@@ -21,11 +23,12 @@ export const TaskCard = ({ animationDelay, info, content }: ITaskCardProps) => {
             <p className="w-full h-min text-neutral-50 font-patrick-hand text-base truncate">{content.title}</p>
             <section className="w-full h-min flex gap-x-2 items-center">
                 <ActionButton
-                    icon={info ? "Checks" : "Check"}
-                    color={info ? "text-green-600" : undefined}
+                    icon={info.done ? "Checks" : "Check"}
+                    color={info.done ? "text-green-600" : undefined}
                     iconSize="text-base"
                     iconAnimation="up"
                     aria-label="Toggle task done"
+                    onClick={() => toggleTaskDoneFn(id)}
                 />
                 <ActionButton
                     icon="ClipboardText"
@@ -47,6 +50,7 @@ export const TaskCard = ({ animationDelay, info, content }: ITaskCardProps) => {
                     iconSize="text-base"
                     iconAnimation="up"
                     aria-label="Remove task"
+                    onClick={() => removeTaskFn(id)}
                 />
             </section>
         </li>
