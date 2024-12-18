@@ -396,8 +396,16 @@ export const todoListSlice = createSlice({
         resetQueryParams: (state) => {
             const taskList = getTaskListOnLocalStorage();
 
-            state.queryParams = TODO_LIST_INITIAL_STATE.queryParams;
-            state.info.totalStateTask = arrayLength(taskList);
+            const totalTaskCount = arrayLength(taskList);
+
+            state.queryParams = {
+                ...TODO_LIST_INITIAL_STATE.queryParams,
+                pagination: {
+                    ...TODO_LIST_INITIAL_STATE.queryParams.pagination,
+                    totalPages: calculateTotalPages(totalTaskCount)
+                }
+            };
+            state.info.totalStateTask = totalTaskCount;
             state.tasks = getTasksInRange(taskList, state.queryParams.pagination.currentPage);
         }
     }

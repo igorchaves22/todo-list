@@ -1,4 +1,5 @@
 import {
+    ArrowClockwise,
     CaretDoubleLeft,
     CaretDoubleRight,
     CaretLeft,
@@ -13,6 +14,7 @@ import {
 } from "@phosphor-icons/react";
 
 export const PhosphorIconsLibraryMap = {
+    ArrowClockwise,
     CaretDoubleLeft,
     CaretDoubleRight,
     CaretLeft,
