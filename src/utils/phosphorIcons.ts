@@ -7,6 +7,7 @@ import {
     Checks,
     ClipboardText,
     Flag,
+    MagnifyingGlass,
     Pencil,
     Trash
 } from "@phosphor-icons/react";
@@ -20,6 +21,7 @@ export const PhosphorIconsLibraryMap = {
     Checks,
     ClipboardText,
     Flag,
+    MagnifyingGlass,
     Pencil,
     Trash
 };
