@@ -21,3 +21,15 @@ html::-webkit-scrollbar-thumb {
 #root {
     @apply w-full h-auto min-h-screen flex flex-col bg-neutral-950;
 }
+
+.scrollbar-sm::-webkit-scrollbar {
+    @apply w-2;
+}
+
+.scrollbar-sm::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+.scrollbar-sm::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-purple-600;
+}

@@ -1,4 +1,4 @@
-import { PageControls, SearchTaskForm, TaskList } from "~components/layout";
+import { AddTaskBox, PageControls, SearchTaskForm, TaskList } from "~components/layout";
 import { ResetQueryParamsButton } from "~components/shared";
 import { useMain } from "~hooks";
 import { renderElementIfTrue } from "~utils";
@@ -11,6 +11,7 @@ export const Main = () => {
             <section className="w-full h-min flex flex-col gap-y-8 items-center">
                 <SearchTaskForm />
                 <section className="w-full h-min flex flex-wrap gap-y-2 gap-x-8 justify-center">
+                    <AddTaskBox />
                     <ResetQueryParamsButton />
                 </section>
             </section>

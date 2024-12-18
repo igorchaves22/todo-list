@@ -10,7 +10,9 @@ import {
     Flag,
     MagnifyingGlass,
     Pencil,
-    Trash
+    Plus,
+    Trash,
+    X
 } from "@phosphor-icons/react";
 
 export const PhosphorIconsLibraryMap = {
@@ -25,5 +27,7 @@ export const PhosphorIconsLibraryMap = {
     Flag,
     MagnifyingGlass,
     Pencil,
-    Trash
+    Plus,
+    Trash,
+    X
 };
