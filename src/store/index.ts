@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { todoListReducer } from "./slice/toDoListSlice";
+import { todoListActions, todoListReducer } from "./slice/toDoListSlice";
 
 export const store = configureStore({
     reducer: {
@@ -8,3 +8,13 @@ export const store = configureStore({
 });
 
 export type StoreRootStateType = ReturnType<typeof store.getState>;
+export const {
+    addTask,
+    editTask,
+    toggleTaskDone,
+    removeTask,
+    removeAllTasks,
+    applySearchOrFilter,
+    setPage,
+    resetQueryParams
+} = todoListActions;

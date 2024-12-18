@@ -18,3 +18,15 @@ export const getItemsInRange = <T>(items: T[], rangeStart: number, maxRange: num
 
     return items.slice(start, end);
 };
+
+export const generateRandomNumber = () => {
+    return Math.floor(Math.random() * 1000000);
+};
+
+export const transformToLowerCase = (text: string) => {
+    return text.toLowerCase();
+};
+
+export const removeArrayDuplicates = <T>(array: T[]): T[] => {
+    return [...new Set(array)];
+};
