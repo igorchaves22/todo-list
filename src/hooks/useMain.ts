@@ -2,7 +2,9 @@ import { useTodoListState } from "./useTodoListState";
 
 export const useMain = () => {
     const {
-        info: { totalStateTask, totalStoredTask }
+        todoList: {
+            info: { totalStateTask, totalStoredTask }
+        }
     } = useTodoListState();
 
     const hasTasks = totalStateTask > 0;

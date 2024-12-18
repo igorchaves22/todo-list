@@ -1,4 +1,4 @@
-import { TaskList } from "~components/layout";
+import { PageControls, TaskList } from "~components/layout";
 import { useMain } from "~hooks";
 import { renderElementIfTrue } from "~utils";
 
@@ -21,7 +21,7 @@ export const Main = () => {
                     hasTasks,
                     <section className="w-full h-min min-h-full flex flex-col gap-y-4 justify-between">
                         <TaskList />
-                        <p className="text-zinc-50 font-patrickHand text-sm text-center">PAGE CONTROLS</p>
+                        <PageControls />
                     </section>
                 )}
                 {renderElementIfTrue(

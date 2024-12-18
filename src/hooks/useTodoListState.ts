@@ -1,8 +1,9 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { StoreRootStateType } from "~store";
 
 export const useTodoListState = () => {
-    const { queryParams, info, tasks } = useSelector(({ todoList }: StoreRootStateType) => todoList);
+    const dispatch = useDispatch();
+    const { todoList } = useSelector((state: StoreRootStateType) => state);
 
-    return { queryParams, info, tasks };
+    return { dispatch, todoList };
 };

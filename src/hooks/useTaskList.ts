@@ -1,7 +1,9 @@
 import { useTodoListState } from "./useTodoListState";
 
 export const useTaskList = () => {
-    const { tasks } = useTodoListState();
+    const {
+        todoList: { tasks }
+    } = useTodoListState();
 
     return { tasks };
 };
