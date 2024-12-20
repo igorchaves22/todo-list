@@ -19,21 +19,32 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 
 - Git
 - PNPM Package Manager
-- Biome.js
+- Code formatting with Biome.js
 - Live demo on Vercel
+- Test coverage with Lighthouse
 
 **Code quality and best practices:**
 
 - Conventional commits
 - Documentation
+- Tests
 - Standardized code formatting
 - Absolute imports
+
+![Image](./public/lighthouse.png)
 
 ## How to use
 
 1. Clone this repository to your computer.
-2. This project uses the `PNPM` package manager. To install dependencies, run the `pnpm install` command. If you prefer to use a different package manager, delete the `node_modules` and `pnpm-lock.yaml` files in the project root and use the appropriate commands to configure it.
+2. This project uses the `PNPM` package manager. To install the dependencies, run the command `pnpm install`. If you prefer to use another package manager, delete the `node_modules` and the `pnpm-lock.yaml` file, then use the appropriate commands to configure the new package manager.
 
-**Running app:**
+### Running app
 
-1. This project uses `Vite.js` as its bundler. To view the project, run the `pnpm dev` command and then open your web browser and navigate to the URL `http://localhost:3000`. If you prefer to use a different server port, open the `vite.config.ts` file in the root of the project, find the `server` section, and change the `port` value as desired.
+1. This project uses `Vite.js` as its bundler. To view the project, run the `pnpm dev` command and then navigate to the URL `http://localhost:3000` in your browser. If you prefer to use a different server port, open the `vite.config.ts` file, find the `server` section, and change the `port` value as desired.
+
+### Running Tests:
+
+**Lighthouse**
+
+1. First, run the `build command`. Then, once the build is complete, start the preview server with the `pnpm preview` command and access the URL `http://localhost:4000` in an incognito window of your browser. If you prefer to use a different port, open the `vite.config.ts` file and find the `preview` section and change the `port` value as desired.
+2. To run the tests, press `F12` on the page or right-click and select `inspect`. Then, go to the `Lighthouse` tab and click `Generate Report` to generate the report.
