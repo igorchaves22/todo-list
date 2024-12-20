@@ -22,6 +22,7 @@ This project is a simple web application for managing your tasks. With features 
 - Conventional commits
 - Documentation
 - Standardized code formatting
+- Absolute imports
 
 ## How to use
 
