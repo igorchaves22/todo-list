@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html::-webkit-scrollbar {
+    @apply w-3 bg-zinc-950;
+}
+
+html::-webkit-scrollbar-thumb {
+    @apply rounded-lg bg-purple-600;
+}
+
+#root {
+    @apply w-full h-auto min-h-screen flex flex-col bg-[url("~assets/image/background.webp")] bg-cover bg-center;
+}
