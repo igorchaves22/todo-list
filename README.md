@@ -11,8 +11,11 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 **Core resources:**
 
 - HTML
+- CSS
+- JavaScript
 - TypeScript
 - React.js
+- Tailwindcss
 - Vite.js
 
 **Development support:**
