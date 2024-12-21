@@ -1,3 +1,9 @@
+import { TodoListProvider } from "~components/shared";
+
 export function App() {
-    return <h1>ToDo List</h1>;
+    return (
+        <TodoListProvider>
+            <h1>ToDo List</h1>
+        </TodoListProvider>
+    );
 }
