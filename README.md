@@ -36,6 +36,7 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - Absolute imports
 - Task List data saved in LocalStorage
 - State management
+- SEO
 
 ![Image](./public/lighthouse.png)
 
