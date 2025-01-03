@@ -12,3 +12,8 @@ export { PaginationControls } from "./PaginationControls";
 export { ErrorMessage } from "./ErrorMessage";
 export { TaskSearchBar } from "./TaskSearchBar";
 export { ResetQueryParamsButton } from "./ResetQueryParamsButton";
+export { ModalScreen } from "./ModalScreen";
+export { AddTaskBox } from "./AddTaskBox";
+export { PriorityInput } from "./PriorityInput";
+export { TextInput } from "./TextInput";
+export { TextareaInput } from "./TextareaInput";

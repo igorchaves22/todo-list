@@ -1,4 +1,5 @@
 import {
+    AddTaskBox,
     NotHasTasksIndicator,
     PaginationControls,
     ResetQueryParamsButton,
@@ -16,6 +17,7 @@ export const PageContent = () => {
             <section className="w-full h-min flex flex-col gap-y-6 items-center">
                 <TaskSearchBar />
                 <section className="w-full h-min flex flex-wrap gap-x-4 justify-center">
+                    <AddTaskBox />
                     <ResetQueryParamsButton />
                 </section>
             </section>
