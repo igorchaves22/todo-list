@@ -26,13 +26,17 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - PNPM Package Manager
 - Biome.js
 - Vercel
+- Lighthouse
 
 **Code quality, best practices and extras:**
 - Conventional Commits
 - Documentation
+- Tests
 - Standardized code formatting
 - Absolute imports
 - Live demo on Vercel
+
+![Image](./public/lighthouse.png)
 
 ---
 
