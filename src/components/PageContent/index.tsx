@@ -1,3 +1,4 @@
+import { NotHasTasksIndicator } from "~components";
 import { usePageContent } from "~hooks";
 
 export const PageContent = () => {
@@ -14,7 +15,7 @@ export const PageContent = () => {
                         <p className="w-full h-min text-neutral-50 font-patrick-hand">PAGINATION CONTROLS</p>
                     </section>
                 ) : (
-                    <p className="w-max h-min text-neutral-50 font-patrick-hand">NOT HAS TASKS INDICATOR</p>
+                    <NotHasTasksIndicator />
                 )}
             </section>
         </main>
