@@ -1,4 +1,4 @@
-import { PageHeader, TodoListStateProvider } from "~components";
+import { PageContent, PageHeader, TodoListStateProvider } from "~components";
 import { initializeTaskListFromLocalStorage } from "~utils";
 import "~styles/main.css";
 
@@ -9,7 +9,7 @@ export function App() {
         <>
             <PageHeader />
             <TodoListStateProvider>
-                <h1>App</h1>
+                <PageContent />
             </TodoListStateProvider>
         </>
     );
