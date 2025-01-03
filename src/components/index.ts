@@ -11,3 +11,4 @@ export { TaskList } from "./TaskList";
 export { PaginationControls } from "./PaginationControls";
 export { ErrorMessage } from "./ErrorMessage";
 export { TaskSearchBar } from "./TaskSearchBar";
+export { ResetQueryParamsButton } from "./ResetQueryParamsButton";
