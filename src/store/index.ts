@@ -7,6 +7,6 @@ export const store = configureStore({
     }
 });
 
-export const { goToFirstPage, goToPrevPage, goToNextPage, goToLastPage } = todoListActions;
+export const { applySearch, goToFirstPage, goToPrevPage, goToNextPage, goToLastPage } = todoListActions;
 
 export type StoreRootStateType = ReturnType<typeof store.getState>;
