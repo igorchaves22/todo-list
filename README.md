@@ -41,6 +41,7 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - Live demo on Vercel
 - Data saved in LocalStorage
 - State management
+- Form validation
 
 ![Image](./public/lighthouse.png)
 

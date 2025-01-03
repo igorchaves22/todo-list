@@ -9,3 +9,5 @@ export { ActionButton } from "./ActionButton";
 export { TaskCard } from "./TaskCard";
 export { TaskList } from "./TaskList";
 export { PaginationControls } from "./PaginationControls";
+export { ErrorMessage } from "./ErrorMessage";
+export { TaskSearchBar } from "./TaskSearchBar";
