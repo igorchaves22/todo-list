@@ -1,5 +1,13 @@
+import { TodoListStateProvider } from "~components";
+import { initializeTaskListFromLocalStorage } from "~utils";
 import "~styles/main.css";
 
+initializeTaskListFromLocalStorage();
+
 export function App() {
-    return <h1>App</h1>;
+    return (
+        <TodoListStateProvider>
+            <h1>App</h1>
+        </TodoListStateProvider>
+    );
 }

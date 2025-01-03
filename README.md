@@ -22,6 +22,7 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - JavaScript
 - TypeScript
 - React.js
+- Redux
 - Vite.js
 
 **Development support:**
@@ -38,6 +39,8 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - Standardized code formatting
 - Absolute imports
 - Live demo on Vercel
+- Data saved in LocalStorage
+- State management
 
 ![Image](./public/lighthouse.png)
 
