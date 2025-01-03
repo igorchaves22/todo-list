@@ -8,3 +8,4 @@ export { PriorityIcon } from "./PriorityIcon";
 export { ActionButton } from "./ActionButton";
 export { TaskCard } from "./TaskCard";
 export { TaskList } from "./TaskList";
+export { PaginationControls } from "./PaginationControls";
