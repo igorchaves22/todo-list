@@ -2,6 +2,15 @@
 
 This project is a simple web application for managing your tasks.
 
+**Preview:**
+![Image](./public/preview.png)
+
+**Live demo:**
+Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the URL directly:
+   ```
+   https://igor-live-demo-todo-list.vercel.app/
+   ```
+
 ---
 
 ## Project resources
@@ -16,12 +25,14 @@ This project is a simple web application for managing your tasks.
 - Git
 - PNPM Package Manager
 - Biome.js
+- Vercel
 
 **Code quality, best practices and extras:**
 - Conventional Commits
 - Documentation
 - Standardized code formatting
 - Absolute imports
+- Live demo on Vercel
 
 ---
 
