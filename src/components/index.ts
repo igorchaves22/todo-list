@@ -3,3 +3,8 @@ export { PageHeader } from "./PageHeader";
 export { PageContent } from "./PageContent";
 export { NotHasTasksIndicator } from "./NotHasTasksIndicator";
 export { TaskCount } from "./TaskCount";
+export { PhosphorIcon } from "./PhosphorIcon";
+export { PriorityIcon } from "./PriorityIcon";
+export { ActionButton } from "./ActionButton";
+export { TaskCard } from "./TaskCard";
+export { TaskList } from "./TaskList";

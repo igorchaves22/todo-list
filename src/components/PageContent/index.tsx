@@ -1,4 +1,4 @@
-import { NotHasTasksIndicator, TaskCount } from "~components";
+import { NotHasTasksIndicator, TaskCount, TaskList } from "~components";
 import { usePageContent } from "~hooks";
 
 export const PageContent = () => {
@@ -11,7 +11,7 @@ export const PageContent = () => {
                 <TaskCount />
                 {hasTasks ? (
                     <section className="w-full h-min min-h-full flex flex-col gap-y-5 justify-between">
-                        <p className="w-full h-min text-neutral-50 font-patrick-hand">TASK LIST</p>
+                        <TaskList />
                         <p className="w-full h-min text-neutral-50 font-patrick-hand">PAGINATION CONTROLS</p>
                     </section>
                 ) : (

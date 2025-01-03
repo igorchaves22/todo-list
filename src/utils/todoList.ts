@@ -20,6 +20,10 @@ export const TODO_LIST_INITIAL_STATE: ITodoList = {
     },
     tasks: TASK_LIST_INITIAL_STATE
 };
+export const itemAnimationDelays = Array.from(
+    { length: TODO_LIST_ITEMS_PER_PAGE },
+    (_, index) => index / TODO_LIST_ITEMS_PER_PAGE
+);
 
 export const getTaskListOnLocalStorage = () => {
     return getLocalStorageItem<TaskListType>(TODO_LIST_LOCALSTORAGE_KEY) || TASK_LIST_INITIAL_STATE;
