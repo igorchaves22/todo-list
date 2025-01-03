@@ -22,3 +22,7 @@ export const getItemsInRange = <T>(items: T[], rangeStart: number, maxRange: num
 export const transformToLowerCase = (text: string) => {
     return text.toLowerCase();
 };
+
+export const generateRandomNumber = () => {
+    return Math.floor(Math.random() * 1000000);
+};

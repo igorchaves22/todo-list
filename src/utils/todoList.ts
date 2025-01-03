@@ -1,5 +1,5 @@
 import { ITodoList, TaskListType } from "~types";
-import { arrayLength, ceilDivision, getItemsInRange, transformToLowerCase } from "./global";
+import { arrayLength, ceilDivision, generateRandomNumber, getItemsInRange, transformToLowerCase } from "./global";
 import { getLocalStorageItem, setLocalStorageItem } from "./localStorage";
 
 export const TODO_LIST_LOCALSTORAGE_KEY = "todoList";
@@ -69,6 +69,17 @@ export const updatePagination = (currentPage: number, itemsLength: number) => {
 
 export const getCurrentTasks = (taskList: TaskListType, page: number) => {
     return getItemsInRange(taskList, page, TODO_LIST_ITEMS_PER_PAGE);
+};
+
+export const validateUniqueId = (taskList: TaskListType, id: number): number => {
+    const idSet = new Set(taskList.map((task) => task.id));
+    const isDuplicateId = idSet.has(id);
+
+    if (isDuplicateId) {
+        return validateUniqueId(taskList, generateRandomNumber());
+    }
+
+    return id;
 };
 
 export const initializeTaskListFromLocalStorage = () => {

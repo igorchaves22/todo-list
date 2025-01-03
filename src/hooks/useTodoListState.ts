@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
     StoreRootStateType,
+    addTask,
     applySearch,
     goToFirstPage,
     goToLastPage,
@@ -9,11 +10,18 @@ import {
     goToPrevPage,
     resetQueryParams
 } from "~store";
+import { ITask } from "~types";
 
 export const useTodoListState = () => {
     const dispatch = useDispatch();
     const data = useSelector(({ todoList }: StoreRootStateType) => todoList);
 
+    const dispatchAddTask = useCallback(
+        (data: ITask) => {
+            dispatch(addTask(data));
+        },
+        [dispatch]
+    );
     const dispatchApplySearch = useCallback(
         (text: string) => {
             dispatch(applySearch(text));
@@ -39,6 +47,7 @@ export const useTodoListState = () => {
     return {
         data,
         dispatch: {
+            dispatchAddTask,
             dispatchApplySearch,
             dispatchGoToFirstPage,
             dispatchGoToPrevPage,

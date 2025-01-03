@@ -1,12 +1,35 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { ITodoList } from "~types";
-import { TODO_LIST_INITIAL_PAGE, TODO_LIST_LOCALSTORAGE_KEY, updateTodoListState } from "~utils";
-import { StringActionType } from "./types";
+import {
+    TODO_LIST_INITIAL_PAGE,
+    TODO_LIST_LOCALSTORAGE_KEY,
+    getTaskListOnLocalStorage,
+    updateTodoListState,
+    validateUniqueId
+} from "~utils";
+import { StringActionType, TaskActionType } from "./types";
 
 const todoListSlice = createSlice({
     name: TODO_LIST_LOCALSTORAGE_KEY,
     initialState: updateTodoListState(),
     reducers: {
+        addTask: (state: ITodoList, action: TaskActionType) => {
+            let { payload } = action;
+            let taskList = getTaskListOnLocalStorage();
+
+            payload.id = validateUniqueId(taskList, payload.id);
+            taskList = [...taskList, payload];
+
+            const {
+                queryParams: { pagination },
+                info,
+                tasks
+            } = updateTodoListState(taskList, state);
+
+            state.queryParams.pagination = pagination;
+            state.info = info;
+            state.tasks = tasks;
+        },
         applySearch: (state: ITodoList, action: StringActionType) => {
             const { payload } = action;
 
