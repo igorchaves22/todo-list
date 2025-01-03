@@ -14,12 +14,13 @@ export const TaskSearchBar = () => {
                 type="submit"
                 color="text-neutral-50"
                 iconSize="text-2xl"
-                aria-label="Submit survey data"
+                aria-label="Submit search data"
             />
             <input
                 type="search"
                 className="w-full h-min outline-none bg-transparent text-neutral-50 font-patrick-hand text-sm"
                 autoComplete="off"
+                aria-label="Search tasks"
                 {...register("searchTerm")}
             />
             <ErrorMessage isVisible={hasError} message={errorMessage} textAlign="text-center" />
