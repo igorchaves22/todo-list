@@ -72,6 +72,13 @@ const todoListSlice = createSlice({
 
             state.queryParams.pagination.currentPage = currentPage;
             state.tasks = tasks;
+        },
+        resetQueryParams: (state: ITodoList) => {
+            const { queryParams, info, tasks } = updateTodoListState();
+
+            state.queryParams = queryParams;
+            state.info = info;
+            state.tasks = tasks;
         }
     }
 });

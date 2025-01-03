@@ -1,6 +1,14 @@
 import { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { StoreRootStateType, applySearch, goToFirstPage, goToLastPage, goToNextPage, goToPrevPage } from "~store";
+import {
+    StoreRootStateType,
+    applySearch,
+    goToFirstPage,
+    goToLastPage,
+    goToNextPage,
+    goToPrevPage,
+    resetQueryParams
+} from "~store";
 
 export const useTodoListState = () => {
     const dispatch = useDispatch();
@@ -24,6 +32,9 @@ export const useTodoListState = () => {
     const dispatchGoToLastPage = useCallback(() => {
         dispatch(goToLastPage());
     }, [dispatch]);
+    const dispatchResetQueryParams = useCallback(() => {
+        dispatch(resetQueryParams());
+    }, [dispatch]);
 
     return {
         data,
@@ -32,7 +43,8 @@ export const useTodoListState = () => {
             dispatchGoToFirstPage,
             dispatchGoToPrevPage,
             dispatchGoToNextPage,
-            dispatchGoToLastPage
+            dispatchGoToLastPage,
+            dispatchResetQueryParams
         }
     };
 };
