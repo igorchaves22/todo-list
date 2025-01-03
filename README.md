@@ -15,10 +15,12 @@ This project is a simple web application for managing your tasks.
 **Development support:**
 - Git
 - PNPM Package Manager
+- Biome.js
 
 **Code quality, best practices and extras:**
 - Conventional Commits
 - Documentation
+- Standardized code formatting
 
 ---
 
