@@ -18,3 +18,4 @@
 - Conventional Commits
 - Documentation
 - Standardized code formatting
+- Absolute imports
