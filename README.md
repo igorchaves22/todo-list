@@ -16,10 +16,13 @@
 **Development support:**
 - Git
 - PNPM Package Manager
+- Lighthouse
 
 **Extras:**
 - Conventional Commits
 - Documentation
+- Tests
 - Standardized code formatting
 - Absolute imports
 - State management
+- Lighthouse analysis result: ![Image](./public/lighthouse.png)

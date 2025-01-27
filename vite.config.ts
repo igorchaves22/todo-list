@@ -10,6 +10,9 @@ export default defineConfig({
     server: {
         port: 3000
     },
+    preview: {
+        port: 4000
+    },
     resolve: {
         alias: {
             "~components": resolve(__dirname, "./src/components"),
