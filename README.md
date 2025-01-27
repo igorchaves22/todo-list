@@ -10,6 +10,7 @@
 - Tailwindcss
 - TypeScript
 - React.js
+- Redux
 - Vite.js
 
 **Development support:**
@@ -21,3 +22,4 @@
 - Documentation
 - Standardized code formatting
 - Absolute imports
+- State management
