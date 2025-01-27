@@ -1,5 +1,16 @@
 # ToDo List
 
+## Project preview
+
+**UI:**
+![Image](./public/preview.png)
+
+**Live demo:**
+Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the URL directly:
+   ```
+   https://igor-live-demo-todo-list.vercel.app/
+   ```
+
 ---
 
 ## Project resources
@@ -17,6 +28,7 @@
 - Git
 - PNPM Package Manager
 - Lighthouse
+- Vercel
 
 **Extras:**
 - Conventional Commits
@@ -25,4 +37,5 @@
 - Standardized code formatting
 - Absolute imports
 - State management
+- Live demo on Vercel
 - Lighthouse analysis result: ![Image](./public/lighthouse.png)
