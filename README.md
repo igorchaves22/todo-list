@@ -17,3 +17,4 @@
 **Extras:**
 - Conventional Commits
 - Documentation
+- Standardized code formatting
