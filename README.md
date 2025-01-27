@@ -6,6 +6,8 @@
 
 **Main technologies:**
 - HTML
+- CSS
+- Tailwindcss
 - TypeScript
 - React.js
 - Vite.js
