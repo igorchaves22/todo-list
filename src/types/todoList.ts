@@ -1,10 +1,11 @@
 export type TaskListType = ITask[];
+export type TaskPriorityType = "low" | "medium" | "high";
 
 export interface ITask {
     id: number;
     info: {
         done: boolean;
-        priority: "low" | "medium" | "high";
+        priority: TaskPriorityType;
     };
     content: {
         title: string;
