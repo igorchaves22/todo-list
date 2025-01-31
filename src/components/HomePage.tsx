@@ -1,4 +1,5 @@
 import svg from "~assets/svg/line.svg";
+import { TodoListLayout } from "./TodoListLayout";
 import { TodoListStateProvider } from "./TodoListStateProvider";
 
 export const HomePage = () => {
@@ -16,7 +17,7 @@ export const HomePage = () => {
                 />
             </header>
             <TodoListStateProvider>
-                <h1 className="w-full h-min text-neutral-50 font-patrickHand text-6xl text-center">App</h1>
+                <TodoListLayout />
             </TodoListStateProvider>
         </section>
     );
