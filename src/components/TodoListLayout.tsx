@@ -1,4 +1,5 @@
 import { useTodoListLayout } from "~hooks";
+import { NoTaskIndicator } from "./NoTaskIndicator";
 
 export const TodoListLayout = () => {
     const { hasTasks } = useTodoListLayout();
@@ -13,7 +14,7 @@ export const TodoListLayout = () => {
                         <p className="w-full h-min grow text-neutral-50 font-patrickHand text-base">TASK LIST</p>
                     </section>
                 ) : (
-                    <p className="w-max h-min text-neutral-50 font-patrickHand text-base">NO TASK INDICATOR</p>
+                    <NoTaskIndicator />
                 )}
             </section>
         </main>
