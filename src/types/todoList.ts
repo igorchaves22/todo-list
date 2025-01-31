@@ -4,6 +4,7 @@ export interface ITask {
     id: number;
     info: {
         done: boolean;
+        priority: "low" | "medium" | "high";
     };
     content: {
         title: string;
