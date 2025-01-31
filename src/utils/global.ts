@@ -11,3 +11,7 @@ export const renderElementIfTrue = (condition: boolean, element: ReactNode) => {
 export const divideTwoNumbers = (numerator: number, denominator: number) => {
     return numerator / denominator;
 };
+
+export const generateRandomNumber = () => {
+    return Math.floor(Math.random() * 1000000);
+};
