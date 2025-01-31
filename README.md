@@ -38,4 +38,6 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - Absolute imports
 - State management
 - Live demo on Vercel
+- Responsive UI
+- Mobile First
 - Lighthouse analysis result: ![Image](./public/lighthouse.png)

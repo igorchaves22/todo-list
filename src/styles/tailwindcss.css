@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@layer base {
+    html::-webkit-scrollbar {
+        @apply w-2 bg-neutral-950;
+    }
+
+    html::-webkit-scrollbar-thumb {
+        @apply rounded-lg bg-purple-600;
+    }
+}
