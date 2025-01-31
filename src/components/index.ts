@@ -3,3 +3,8 @@ export { HomePage } from "./HomePage";
 export { TodoListLayout } from "./TodoListLayout";
 export { NoTaskIndicator } from "./NoTaskIndicator";
 export { TaskCount } from "./TaskCount";
+export { PhosphorIcon } from "./PhosphorIcon";
+export { ActionButton } from "./ActionButton";
+export { PriorityIcon } from "./PriorityIcon";
+export { TaskCard } from "./TaskCard";
+export { TaskList } from "./TaskList";

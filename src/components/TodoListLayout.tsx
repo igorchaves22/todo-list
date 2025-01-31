@@ -1,6 +1,7 @@
 import { useTodoListLayout } from "~hooks";
 import { NoTaskIndicator } from "./NoTaskIndicator";
 import { TaskCount } from "./TaskCount";
+import { TaskList } from "./TaskList";
 
 export const TodoListLayout = () => {
     const { hasTasks } = useTodoListLayout();
@@ -10,9 +11,9 @@ export const TodoListLayout = () => {
             <p className="w-max h-min text-neutral-50 font-patrickHand text-base">ADD TASK FORM</p>
             <section className="w-full h-min min-h-full flex flex-col place-content-center place-items-center">
                 {hasTasks ? (
-                    <section className="w-full h-min flex flex-col grow gap-y-4 md:px-20">
+                    <section className="w-full h-min flex flex-col grow gap-y-4 md:px-14">
                         <TaskCount />
-                        <p className="w-full h-min grow text-neutral-50 font-patrickHand text-base">TASK LIST</p>
+                        <TaskList />
                     </section>
                 ) : (
                     <NoTaskIndicator />

@@ -41,4 +41,5 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - Responsive UI
 - Mobile First
 - LocalStorage integration
+- Animations
 - Lighthouse analysis result: ![Image](./public/lighthouse.png)
