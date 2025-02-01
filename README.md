@@ -22,6 +22,8 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - TypeScript
 - React.js
 - Redux
+- React Hook Form
+- Yup
 - Vite.js
 
 **Development support:**
@@ -42,4 +44,5 @@ Access the [Live Demo](https://igor-live-demo-todo-list.vercel.app/) or copy the
 - Mobile First
 - LocalStorage integration
 - Animations
+- Form validation
 - Lighthouse analysis result: ![Image](./public/lighthouse.png)

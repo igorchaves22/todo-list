@@ -8,3 +8,6 @@ export { ActionButton } from "./ActionButton";
 export { PriorityIcon } from "./PriorityIcon";
 export { TaskCard } from "./TaskCard";
 export { TaskList } from "./TaskList";
+export { OverlayModal } from "./OverlayModal";
+export { ErrorMessage } from "./ErrorMessage";
+export { AddTaskForm } from "./AddTaskForm";
